@@ -117,6 +117,17 @@ function App() {
                 },
               },
             },
+            filters: [
+              {
+                $schema: "http://powerbi.com/product/schema#basic",
+                target: {
+                  table: "<Table Name>", //  table name
+                  column: "<Column Name>", // column name
+                },
+                operator: "In",
+                values: ["<Merchant ID>"], //  merchant's ID
+              },
+            ],
           }}
           eventHandlers={
             new Map([
